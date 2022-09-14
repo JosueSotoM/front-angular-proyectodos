@@ -1,0 +1,15 @@
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -49%);
+    
+}
+
+label{
+    color: rgb(236, 234, 234);
+    font-weight: bold;
+}
+
+
+
