@@ -7,6 +7,8 @@ import { CrearLigasComponent } from './crear-ligas/crear-ligas.component';
 import { RegistroComponent } from './registro/registro.component';
 import { MisLigasComponent } from './mis-ligas/mis-ligas.component';
 import { LoginComponent } from './login/login.component';
+import { PrincipalComponent } from './principal/principal.component';
+import { EquiposComponent } from './equipos/equipos.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { LoginComponent } from './login/login.component';
     CrearLigasComponent,
     RegistroComponent,
     MisLigasComponent,
-    LoginComponent
+    LoginComponent,
+    PrincipalComponent,
+    EquiposComponent
   ],
   imports: [
     BrowserModule,
