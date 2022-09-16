@@ -5,20 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CrearLigasComponent } from './crear-ligas/crear-ligas.component';
 import { RegistroComponent } from './registro/registro.component';
-import { MisLigasComponent } from './mis-ligas/mis-ligas.component';
 import { LoginComponent } from './login/login.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { EquiposComponent } from './equipos/equipos.component';
+import { Routes } from '@angular/router';
 
+const appRoutes:Routes=[];
 @NgModule({
   declarations: [
     AppComponent,
     CrearLigasComponent,
     RegistroComponent,
-    MisLigasComponent,
     LoginComponent,
     PrincipalComponent,
-    EquiposComponent
+    EquiposComponent,
   ],
   imports: [
     BrowserModule,

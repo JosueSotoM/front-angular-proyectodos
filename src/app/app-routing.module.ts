@@ -1,10 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CrearLigasComponent } from './crear-ligas/crear-ligas.component';
+import { EquiposComponent } from './equipos/equipos.component';
+import { LoginComponent } from './login/login.component';
+import { PrincipalComponent } from './principal/principal.component';
+import { RegistroComponent } from './registro/registro.component';
 
-const routes: Routes = [];
+const appRoutes: Routes = [
+  {path:'',component:LoginComponent},
+  {path: 'registro', component: RegistroComponent},
+  {path: 'principal', component: PrincipalComponent},
+  {path: 'login',component: LoginComponent},
+  {path: 'equipos',component: EquiposComponent},
+  {path: 'crear-ligas', component: CrearLigasComponent},
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

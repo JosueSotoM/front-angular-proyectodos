@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-principal',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrincipalComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
+  navegar3(){
+    this.router.navigate(['/crear-ligas']);
+  }
+  navegar1(){
+    this.router.navigate(['/mis.ligas']);
+  }
+
 
 }
