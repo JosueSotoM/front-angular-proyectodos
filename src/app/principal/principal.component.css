@@ -67,3 +67,14 @@ body {
   #sidebar .nav a i{
     margin-right: 16px;
   }
+
+  h2 {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    color: rgb(00, 00, 00);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+  }
+  .boton_personalizado {background-color: #3e9f65; color: rgb(166, 45, 45);} 
