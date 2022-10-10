@@ -32,7 +32,13 @@ form{
     border-right: 0.3rem solid rgba(185, 177, 177, 0.363);
     border-bottom: 0.3rem solid rgba(185, 177, 177, 0.363);
 }
-body{
-    background-image: url(https://deportesinc.com/depsite/wp-content/uploads/2022/03/Qatar-2022-crypto.com_.jpg);
-}
 
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 50 auto;
+    background-image: url(principal.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+}
