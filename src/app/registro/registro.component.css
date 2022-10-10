@@ -11,5 +11,8 @@ label{
     font-weight: bold;
 }
 
-
-
+#divCentro{
+    height:100px;
+    width:900px;
+     text-align:center;
+}

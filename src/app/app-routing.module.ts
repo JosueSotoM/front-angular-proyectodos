@@ -5,6 +5,7 @@ import { EquiposComponent } from './equipos/equipos.component';
 import { LoginComponent } from './login/login.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { RegistroComponent } from './registro/registro.component';
+import { ClasificacionesComponent } from './clasificaciones/clasificaciones.component';
 
 const appRoutes: Routes = [
   {path:'',component:LoginComponent},
@@ -13,6 +14,7 @@ const appRoutes: Routes = [
   {path: 'login',component: LoginComponent},
   {path: 'equipos',component: EquiposComponent},
   {path: 'crear-ligas', component: CrearLigasComponent},
+  {path: 'clasificaciones', component: ClasificacionesComponent},
 ];
 
 @NgModule({
