@@ -9,6 +9,8 @@ import { LoginComponent } from './login/login.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { EquiposComponent } from './equipos/equipos.component';
 import { Routes } from '@angular/router';
+import { ModalCrearLigasComponent } from './modal-crear-ligas/modal-crear-ligas.component';
+import { InvitarComponent } from './invitar/invitar.component';
 
 const appRoutes:Routes=[];
 @NgModule({
@@ -19,6 +21,8 @@ const appRoutes:Routes=[];
     LoginComponent,
     PrincipalComponent,
     EquiposComponent,
+    ModalCrearLigasComponent,
+    InvitarComponent,
   ],
   imports: [
     BrowserModule,
