@@ -11,6 +11,7 @@ import { EquiposComponent } from './equipos/equipos.component';
 import { Routes } from '@angular/router';
 import { ModalCrearLigasComponent } from './modal-crear-ligas/modal-crear-ligas.component';
 import { InvitarComponent } from './invitar/invitar.component';
+import { ClasificacionesComponent } from './clasificaciones/clasificaciones.component';
 
 const appRoutes:Routes=[];
 @NgModule({
@@ -23,6 +24,7 @@ const appRoutes:Routes=[];
     EquiposComponent,
     ModalCrearLigasComponent,
     InvitarComponent,
+    ClasificacionesComponent,
   ],
   imports: [
     BrowserModule,

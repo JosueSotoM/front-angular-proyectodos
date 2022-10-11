@@ -1,28 +1,45 @@
 <div id="viewport"><!-- Sidebar -->
   <div id="sidebar">
     <header>
-      <a href="#">FIFA 2022</a>
+      <p>
+      <a >QUINIELA UMG</a>
+    </p>
     </header>
     <ul class="nav">
       <li>
+        <p>
         <a href="#">
-          <i class="zmdi zmdi-view-inicio"></i> INICIO
+          <button type="button" class="btn btn-info">INICIO</button>
         </a>
+      </p>
       </li>
       <li>
+      <p>
         <a (click)="navegar3()" href="/crear-ligas">
-          <i class="zmdi zmdi-creacion de ligas"></i> CREACION DE  LIGAS
+          <button type="button" class="btn btn-info">CREACION DE  LIGAS</button>
         </a>
+      </p>
       </li>
       <li>
+      <p>
+        <a (click)="navegar3()" href="/crear-ligas">
+          <button type="button" class="btn btn-info">UNIRSE A LIGA</button>
+        </a>
+      </p>
+      </li>
+      <li>
+        <p>
         <a (click)="navegar1()" href="/misligas">
-          <i class="zmdi zmdi-mis ligas"></i> MIS LIGAS
+          <button type="button" class="btn btn-info">MIS LIGAS</button>
         </a>
+      </p>
       </li>
       <li>
-        <a href="#">
-          <button class="zmdi zmdi-equipos">EQUIPOS</button> 
+        <p>
+        <a (click)="navegar2()" href="/clasificaciones">
+          <button type="button" class="btn btn-info">RESULTADO PARTIDOS</button>
         </a>
+        </p>
       </li>
     </ul>
   </div>
@@ -34,18 +51,26 @@
             <a href="#"><i class="zmdi zmdi-notifications text-danger"></i>
             </a>
           </li>
-          <li><a href="#">Bienvenido</a></li>
+          <li>
+              <h1>BIENVENIDO</h1>
+          </li>
         </ul>
       </div>
     </nav>
     <div class="contenedor">
-      <h1>LIGAS</h1>
+      <h2>LIGAS DISPONIBLES</h2>
           <ul class="list-group">
-          <li class="list-group-item disabled">Liga Española</li>
-          <li class="list-group-item">LIGA CENTROAMERICANA</li>
-          <li class="list-group-item">LIGA EUROPEA</li>
-          <li class="list-group-item">LIGA ALEMANA</li>
-          <li class="list-group-item">LIGA  AMERICANA</li>
+          <li class="list-group-item disabled"></li>
+          <button type="button" class="btn btn-primary btn-lg btn-block">Liga 1</button>
+          <li class="list-group-item disabled"></li>
+          <button type="button" class="btn btn-primary btn-lg btn-block">Liga 2</button>
+          <li class="list-group-item disabled"></li>
+          <button type="button" class="btn btn-primary btn-lg btn-block">Liga 3</button>
+          <li class="list-group-item disabled"></li>
+          <button type="button" class="btn btn-primary btn-lg btn-block">Liga 4</button>
+          <li class="list-group-item disabled"></li>
+          <button type="button" class="btn btn-primary btn-lg btn-block">Liga 5</button>
+          <li class="list-group-item disabled"></li>
           </ul>
     </div>
   </div>
