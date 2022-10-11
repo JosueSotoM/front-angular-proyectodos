@@ -1,11 +1,34 @@
 <body id="body1">
-  <div class="row-cols-sm-7" style="text-align: left;">
-   <input type="text" class="form-control" style="width: 300px;margin: left;" placeholder="correo electronico">
-   <input type="password" class="form-control" style="width: 300px;margin: left;" placeholder="contraseña" >
-     <div class="row-cols-sm-7" style="text-align: right;">
-     <button (click)="navegar()" class="submit" class="btn btn-primary" id="BtnInvitar" href="/principal" >INGRESAR</button>
-     <button (click)="navegar1()"class="submit" class="btn btn-primary" id="BtnRegistrar" href="/registro">REGISTRATE</button>
-       </div>
-      </div>
- </body>
 
+  <section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-10 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark bg-gradient opacity-80 text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+                <h2 class="fw-bold mb-2 text-uppercase">Ingresar</h2>
+                <p class="text-white-50 mb-5">Ingrese su correo y contraseña</p>
+  
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="form2Example1" class="form-control" />
+                  <label class="form-label" for="form2Example1">Correo electrónico</label>
+                </div>
+  
+                <div class="form-outline form-white mb-4">
+                  <input type="password" id="form2Example2" class="form-control" />
+                  <label class="form-label" for="form2Example2">Contraseña</label>
+                </div>
+                <p>
+                <button (click)="navegar()" class="btn btn-outline-light btn-lg px-5" type="submit" href="/principal">Ingresar</button>
+                </p>
+                <button (click)="navegar1()" class="btn btn-outline-light btn-lg px-5" style="background-color: #e47b6d;"
+                type="submit"><i href="/registro"></i> Registrarse</button>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
