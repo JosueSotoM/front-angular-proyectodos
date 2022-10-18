@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { HorasEjecutaService } from "./../horas-ejecuta.service";
+
 
 @Component({
   selector: 'app-clasificaciones',
@@ -9,8 +9,8 @@ import { HorasEjecutaService } from "./../horas-ejecuta.service";
 })
 export class ClasificacionesComponent implements OnInit {
 
-  constructor(private router: Router,private _hora:HorasEjecutaService) {
-   _hora.carga(["/horario"]);
+  constructor(private router: Router) {
+
   }
 
   ngOnInit(): void {

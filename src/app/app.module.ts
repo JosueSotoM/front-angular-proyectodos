@@ -15,9 +15,6 @@ import { ClasificacionesComponent } from './clasificaciones/clasificaciones.comp
 
 import { HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
-//inicio servicio
-import{HorasEjecutaService} from "./horas-ejecuta.service";
-//fin servicio
 
 const appRoutes:Routes=[];
 @NgModule({
@@ -39,7 +36,7 @@ const appRoutes:Routes=[];
     HttpClientModule,
     FormsModule
   ],
-  providers: [HorasEjecutaService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
