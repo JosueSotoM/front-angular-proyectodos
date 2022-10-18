@@ -13,6 +13,9 @@ import { ModalCrearLigasComponent } from './modal-crear-ligas/modal-crear-ligas.
 import { InvitarComponent } from './invitar/invitar.component';
 import { ClasificacionesComponent } from './clasificaciones/clasificaciones.component';
 
+import { HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
+
 const appRoutes:Routes=[];
 @NgModule({
   declarations: [
@@ -25,10 +28,13 @@ const appRoutes:Routes=[];
     ModalCrearLigasComponent,
     InvitarComponent,
     ClasificacionesComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
