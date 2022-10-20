@@ -12,9 +12,10 @@ import { Routes } from '@angular/router';
 import { ModalCrearLigasComponent } from './modal-crear-ligas/modal-crear-ligas.component';
 import { InvitarComponent } from './invitar/invitar.component';
 import { ClasificacionesComponent } from './clasificaciones/clasificaciones.component';
-
+import {CookieService} from 'ngx-cookie-service';
 import { HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import { HttpRequestInterceptorModule } from './jwt-iterceptor.interceptor';
 
 const appRoutes:Routes=[];
 @NgModule({
@@ -34,9 +35,10 @@ const appRoutes:Routes=[];
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    HttpRequestInterceptorModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
