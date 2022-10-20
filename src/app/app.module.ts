@@ -13,8 +13,14 @@ import { ModalCrearLigasComponent } from './modal-crear-ligas/modal-crear-ligas.
 import { InvitarComponent } from './invitar/invitar.component';
 import { ClasificacionesComponent } from './clasificaciones/clasificaciones.component';
 
-import { HttpClientModule} from '@angular/common/http';
-import {FormsModule} from '@angular/forms';
+import { HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { SigninComponent } from './components/signin/signin.component';
+import { AuthInterceptor } from './shared/authconfig.interceptor';
+import { SignupComponent } from './components/signup/signup.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
+
+
 
 const appRoutes:Routes=[];
 @NgModule({
@@ -28,15 +34,24 @@ const appRoutes:Routes=[];
     ModalCrearLigasComponent,
     InvitarComponent,
     ClasificacionesComponent,
+    SigninComponent,
+    SignupComponent,
+    UserProfileComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: AuthInterceptor,
+    multi: true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
