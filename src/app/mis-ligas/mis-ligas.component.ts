@@ -12,5 +12,19 @@ export class MisLigasComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  regresar(){
+    this.router.navigate(['principal']);
+  }
 
+  apostar(){
+    this.router.navigate(['/apostar']);
+  }
+  clasifica(){
+    this.router.navigate(['/clasificaciones']);
+  }
+
+  invitar(){
+    this.router.navigate(['/invitar']);
+  }
+  
 }

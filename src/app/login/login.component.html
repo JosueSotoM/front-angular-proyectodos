@@ -12,9 +12,11 @@
                 <div class="form-group">
                   <label class="form-label" for="form2Example1">Usuario</label>
                   <input type="userName"  
-                  class="form-control"
-                  formControlName="userName"
-                  placeholder="Ingrese usuario registrado"/>
+                        class="form-control"
+                        formControlName="userName"
+                        placeholder="Ingrese usuario registrado"
+                        pattern="[a-z]{5-15}"
+                        />
                 </div>
   
                 <div class="form-group">

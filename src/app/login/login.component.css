@@ -17,3 +17,8 @@ body{
    #BtnRegistrar{
        background-color: rgb(28, 27, 30);
    }
+
+   #notify.error{
+    background-color: #960e0c;
+  }
+  

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-modal-crear-ligas',
@@ -8,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalCrearLigasComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+  navegar(){
+    window.alert("Liga creada exitosamente ");
+    this.router.navigate(['principal']);
   }
 
 }
