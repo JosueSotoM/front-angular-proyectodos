@@ -23,15 +23,21 @@ export class PrincipalComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  navegar3(){
-    this.router.navigate(['/crear-ligas']);
-  }
-  navegar1(){
+  misLigas(){
     this.router.navigate(['/mis-ligas']);
   }
-  navegar2(){
+  clasifica(){
     this.router.navigate(['/clasificaciones']);
   }
-
+  apostar(){
+    this.router.navigate(['/apostar']);
+  }
+  creaLiga(){
+    this.router.navigate(['/modal-crear-ligas']);
+  }
+  
+  invitar(){
+    this.router.navigate(['/invitar']);
+  }
 
 }

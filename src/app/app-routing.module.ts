@@ -8,7 +8,9 @@ import { RegistroComponent } from './registro/registro.component';
 import { ClasificacionesComponent } from './clasificaciones/clasificaciones.component';
 import { ModalCrearLigasComponent } from './modal-crear-ligas/modal-crear-ligas.component';
 import { InvitarComponent } from './invitar/invitar.component';
+import { ApostarComponent} from './apostar/apostar.component';
 import { AuthGuard } from "./shared/auth.guard";
+import { MisLigasComponent} from './mis-ligas/mis-ligas.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -21,6 +23,8 @@ const appRoutes: Routes = [
   {path: 'clasificaciones', component: ClasificacionesComponent},
   {path: 'modal-crear-ligas', component: ModalCrearLigasComponent},
   {path: 'invitar', component: InvitarComponent},
+  {path: 'apostar', component: ApostarComponent},
+  {path: 'mis-ligas', component: MisLigasComponent},
 ];
 
 @NgModule({

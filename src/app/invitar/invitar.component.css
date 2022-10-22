@@ -6,3 +6,12 @@ body#fondoInvitar{
     background: rgb(2,0,36);
     */
 }
+
+select:focus:required:invalid {
+    background-color: #f9bfbe;
+  }
+
+  #notify.error{
+    background-color: #960e0c;
+  }
+  

@@ -11,8 +11,7 @@ form{
     background-color: rgba(233, 231, 235, 0.548);
 }
 body{
-    background-color: aqua;
-    height: 39.2em;
+    height: 100vh;  
     background-image: url(https://i.pinimg.com/736x/77/ba/af/77baafbb636948bf4d0a47ccb8ce539b.jpg);
 }
 #Ligas{
@@ -37,13 +36,7 @@ label{
     left: 15%;
     bottom: 8%;
 }
-#BtnInvitar{
-    position: relative;
-    left: 88%;
-    background-color: rgba(75, 16, 16, 0.699);
-    color: white;
-    border-color: rgb(75, 16, 16, 0.699);
-}
+
 #BtnBuscar{
     position: relative;
     left: 50%;
@@ -52,3 +45,17 @@ label{
     color: white;
 
 }
+
+#BtnInvitar {
+    display: inline-block;
+    padding: 0.85em 1.5em;
+    font-size: 1 em;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #5D5D9B;
+    border: none;
+    border-radius: 0;
+  }
+
+  

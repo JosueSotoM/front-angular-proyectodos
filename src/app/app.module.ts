@@ -16,7 +16,8 @@ import { ClasificacionesComponent } from './clasificaciones/clasificaciones.comp
 import { HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
 import {ReactiveFormsModule,FormsModule} from '@angular/forms';
 import { AuthInterceptor } from './shared/authconfig.interceptor';
-
+import { ApostarComponent } from './apostar/apostar.component';
+import { MisLigasComponent } from './mis-ligas/mis-ligas.component';
 
 const appRoutes:Routes=[];
 @NgModule({
@@ -30,7 +31,8 @@ const appRoutes:Routes=[];
     ModalCrearLigasComponent,
     InvitarComponent,
     ClasificacionesComponent,
-
+    ApostarComponent,
+    MisLigasComponent,
   ],
   imports: [
     BrowserModule,

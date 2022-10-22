@@ -13,6 +13,7 @@ export class CrearLigasComponent implements OnInit {
   ngOnInit(): void {
   }
   navegar(){
+    window.alert("Liga creada exitosamente ");
     this.router.navigate(['principal']);
   }
 }
