@@ -1,12 +1,15 @@
 {
   "name": "front-angular-proyectodos",
+  "homepage": "https://JosueSotoM.github.io/front-angular-proyectodos",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxy.conf.json",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "private": true,
   "dependencies": {
@@ -30,6 +33,7 @@
     "@angular/compiler-cli": "^14.1.0",
     "@playwright/test": "^1.27.1",
     "@types/jasmine": "~4.0.0",
+    "gh-pages": "^4.0.0",
     "jasmine-core": "~4.2.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
