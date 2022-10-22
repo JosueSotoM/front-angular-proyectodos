@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-declare var $:any;
+import { AuthService } from './shared/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,8 @@ declare var $:any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'front-angular-proyectodos';
+  constructor(public authService: AuthService) { }
+  logout() {
+    this.authService.doLogout()
+  }
 }

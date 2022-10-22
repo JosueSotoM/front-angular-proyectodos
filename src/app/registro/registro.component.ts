@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { AuthService } from '../shared/auth.service';
 
 @Component({
   selector: 'app-registro',
@@ -8,7 +10,23 @@ import { Router } from '@angular/router';
 })
 export class RegistroComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  signupForm: FormGroup;
+  constructor(
+    public fb: FormBuilder,
+    public authService: AuthService,
+    public router: Router
+  ){
+    this.signupForm = this.fb.group({
+      userName: [''],
+      password: [''],
+      fechaNacimiento: [''],
+      sexo: [''],
+      nombres: [''],
+      apellidos: [''],
+      email: [''],
+      fotoPerfil: [''],
+    });
+  }
 
   ngOnInit(): void {
   }
@@ -16,4 +34,12 @@ export class RegistroComponent implements OnInit {
     this.router.navigate(['/principal']);
   }
 
+  registerUser() {
+    this.authService.signUp(this.signupForm.value).subscribe((res) => {
+      if (res.result) {
+        this.signupForm.reset();
+        this.router.navigate(['login']);
+      }
+    });
+  }
 }

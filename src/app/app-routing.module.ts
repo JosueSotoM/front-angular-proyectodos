@@ -8,11 +8,13 @@ import { RegistroComponent } from './registro/registro.component';
 import { ClasificacionesComponent } from './clasificaciones/clasificaciones.component';
 import { ModalCrearLigasComponent } from './modal-crear-ligas/modal-crear-ligas.component';
 import { InvitarComponent } from './invitar/invitar.component';
+import { AuthGuard } from "./shared/auth.guard";
 
 const appRoutes: Routes = [
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   {path:'',component:LoginComponent},
   {path: 'registro', component: RegistroComponent},
-  {path: 'principal', component: PrincipalComponent},
+  {path: 'principal', component: PrincipalComponent,canActivate: [AuthGuard]},
   {path: 'login',component: LoginComponent},
   {path: 'equipos',component: EquiposComponent},
   {path: 'crear-ligas', component: CrearLigasComponent},
